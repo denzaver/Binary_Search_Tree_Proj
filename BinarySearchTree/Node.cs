@@ -10,8 +10,9 @@ namespace BinarySearchTree
     {
 
         //member variables  (has a)
-
-        
+        public int Data;
+        public Node leftNode;
+        public Node rightNode;
 
         //constructor
 

@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree
 {
-    public class BinarySearchTree
+     class BinarySearchTree
     {
 
         // memeber variables
+
+        public Node RootNode;
 
         // constructor
         public BinarySearchTree()
@@ -18,6 +20,16 @@ namespace BinarySearchTree
         }
 
         // member methods 
+
+        public void AddNode(Node nodeToAdd)
+        {
+
+        }
+
+        public void SearchNodes(int datatoFind) // this returns a bool (true or false)
+        {
+
+        }
 
     }
 }
