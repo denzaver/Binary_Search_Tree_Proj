@@ -31,11 +31,16 @@ namespace BinarySearchTree
             {
                 Node currentNode = RootNode;
                 while (true)
-                if (currentNode.leftNode == null && currentNode.Data > nodeToAdd.Data) //SF: to make this work
+                if (currentNode.Data > nodeToAdd.Data && currentNode.leftNode == null ) //SF: to make this work
                 {                                                                         // need to compare better data that they both share (like int =) )
                         currentNode.leftNode = nodeToAdd;
                         break;
                 }
+                else if (currentNode.Data < nodeToAdd.Data && currentNode.rightNode == null )
+                {
+                        currentNode.rightNode = nodeToAdd;
+                        break;
+                }  
             }
         }
 
